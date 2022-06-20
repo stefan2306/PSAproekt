@@ -2,49 +2,49 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class МагическаДъска implements Observable 
+public class РњР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР° implements Observable 
 {
 
-	private List<Джудже> джуджета;
-	private String магическаДъска;
+	private List<Р”Р¶СѓРґР¶Рµ> РґР¶СѓРґР¶РµС‚Р°;
+	private String РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°;
 	
-	public МагическаДъска() 
+	public РњР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°() 
 	{
-		this.джуджета = new ArrayList<>();
+		this.РґР¶СѓРґР¶РµС‚Р° = new ArrayList<>();
 	}
 
 	@Override
-	public void goToBoard(Джудже джудже) 
+	public void goToBoard(Р”Р¶СѓРґР¶Рµ РґР¶СѓРґР¶Рµ) 
 	{
-		this.джуджета.add(джудже);
-		(джуджета).checkBoard(this);
+		this.РґР¶СѓРґР¶РµС‚Р°.add(РґР¶СѓРґР¶Рµ);
+		(РґР¶СѓРґР¶РµС‚Р°).checkBoard(this);
 	}
 
 	@Override
-	public void getToy(Джудже джудже)
+	public void getToy(Р”Р¶СѓРґР¶Рµ РґР¶СѓРґР¶Рµ)
 	{
-		this.джуджета.remove(джудже);
-		джудже.checkBoard(null);
+		this.РґР¶СѓРґР¶РµС‚Р°.remove(РґР¶СѓРґР¶Рµ);
+		РґР¶СѓРґР¶Рµ.checkBoard(null);
 	}
 
 	@Override
 	public void notifyObservers()
 	{
-		for(Джудже джудже: this.джуджета) 
+		for(Р”Р¶СѓРґР¶Рµ РґР¶СѓРґР¶Рµ: this.РґР¶СѓРґР¶РµС‚Р°) 
 		{
-			джудже.update();
+			РґР¶СѓРґР¶Рµ.update();
 		}
 	}
 
 	@Override
 	public String getUpdate() 
 	{
-		return this.магическаДъска;
+		return this.РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°;
 	}
 
-	public void checkBoard(String магическаДъска)
+	public void checkBoard(String РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°)
 	{
-		this.магическаДъска = магическаДъска;
+		this.РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР° = РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°;
 		this.notifyObservers();
 	}
 
