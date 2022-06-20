@@ -1,26 +1,26 @@
 package singleton;
 
-public class ДядоКоледа
+public class Р”СЏРґРѕРљРѕР»РµРґР°
 {
-	private static ДядоКоледа instance;
+	private static Р”СЏРґРѕРљРѕР»РµРґР° instance;
 	
-	private ДядоКоледа()
+	private Р”СЏРґРѕРљРѕР»РµРґР°()
 	{
 		// TODO Auto-generated constructor stub
 	}
 
-	public static ДядоКоледа getInstance() 
+	public static Р”СЏРґРѕРљРѕР»РµРґР° getInstance() 
 	{
 		
 		if(instance == null) 
 		{
-			instance = new ДядоКоледа();
+			instance = new Р”СЏРґРѕРљРѕР»РµРґР°();
 		}
 		
 		return instance;
 	}
 	
 	public void postMessage(String message) {
-		System.out.println("Дядо Коледа изрича думите:" + message);
+		System.out.println("Р”СЏРґРѕ РљРѕР»РµРґР° РёР·СЂРёС‡Р° РґСѓРјРёС‚Рµ:" + message);
 	}
 }
