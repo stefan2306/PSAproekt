@@ -1,19 +1,19 @@
 package command;
 
-public class Играчка 
+public class РРіСЂР°С‡РєР° 
 {
-	private boolean колелоИлиКукла;
+	private boolean РєРѕР»РµР»РѕРР»РёРљСѓРєР»Р°;
 	
-	public void кукла()
+	public void РєСѓРєР»Р°()
 	{
-		System.out.println(" Трябват ми кукли! ");
-		this.колелоИлиКукла = true;
+		System.out.println(" РўСЂСЏР±РІР°С‚ РјРё РєСѓРєР»Рё! ");
+		this.РєРѕР»РµР»РѕРР»РёРљСѓРєР»Р° = true;
 	}
 	
-	public void колело()
+	public void РєРѕР»РµР»Рѕ()
 	{
-		System.out.println(" Трябват ми колелета! ");
-		this.колелоИлиКукла = false;
+		System.out.println(" РўСЂСЏР±РІР°С‚ РјРё РєРѕР»РµР»РµС‚Р°! ");
+		this.РєРѕР»РµР»РѕРР»РёРљСѓРєР»Р° = false;
 	}
 
 }
