@@ -1,21 +1,21 @@
 package abstractfactory;
 
-public class ФабрикаЗаИграчки extends AbstractFactory 
+public class Р¤Р°Р±СЂРёРєР°Р—Р°РРіСЂР°С‡РєРё extends AbstractFactory 
 {
 
 	@Override
-	ПроизведенаИграчка getToy(String toyType) 
+	РџСЂРѕРёР·РІРµРґРµРЅР°РРіСЂР°С‡РєР° getToy(String toyType) 
 	{
-		if(toyType.equals("КОЛЕЛО")) 
+		if(toyType.equals("РљРћР›Р•Р›Рћ")) 
 		{
-			return new Колело();
+			return new РљРѕР»РµР»Рѕ();
 		}
 		
-		if(toyType.equals ("КУКЛА")) 
+		if(toyType.equals ("РљРЈРљР›Рђ")) 
 		{
-			return new Кукла();
+			return new РљСѓРєР»Р°();
 		}
-		System.out.println("Играчката не е колело или кукла");
+		System.out.println("РРіСЂР°С‡РєР°С‚Р° РЅРµ Рµ РєРѕР»РµР»Рѕ РёР»Рё РєСѓРєР»Р°");
 		return null;
 	}
 
