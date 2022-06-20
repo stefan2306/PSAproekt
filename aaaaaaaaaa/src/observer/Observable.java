@@ -3,8 +3,8 @@ package observer;
 public interface Observable 
 {
 	
-	void gоToBoard(Джудже джудже);
-	void getToy(Джудже джудже);
+	void gРѕToBoard(Р”Р¶СѓРґР¶Рµ РґР¶СѓРґР¶Рµ);
+	void getToy(Р”Р¶СѓРґР¶Рµ РґР¶СѓРґР¶Рµ);
 	
 	void notifyObservers();
 	String getUpdate();
