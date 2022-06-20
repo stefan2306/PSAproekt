@@ -1,6 +1,6 @@
 package abstractfactory;
 
-public interface ПроизведенаИграчка 
+public interface РџСЂРѕРёР·РІРµРґРµРЅР°РРіСЂР°С‡РєР° 
 {
 	void produce();
 }
