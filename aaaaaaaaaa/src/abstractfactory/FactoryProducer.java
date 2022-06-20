@@ -6,11 +6,11 @@ public class FactoryProducer
 	public static AbstractFactory getFactory(String factoryName) 
 	{
 		
-		if(factoryName.equals("ФабрикаЗаИгачки")) 
+		if(factoryName.equals("Р¤Р°Р±СЂРёРєР°Р—Р°РРіР°С‡РєРё")) 
 		{
-			return new ФабрикаЗаИграчки();
+			return new Р¤Р°Р±СЂРёРєР°Р—Р°РРіСЂР°С‡РєРё();
 		}		
-		System.out.println(" Грешка! ");
+		System.out.println(" Р“СЂРµС€РєР°! ");
 		return null;
 
 	}
