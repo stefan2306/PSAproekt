@@ -1,6 +1,6 @@
 package command;
 
-public class МагическиДуми {
+public class РњР°РіРёС‡РµСЃРєРёР”СѓРјРё {
 
 	private Command command;
 
@@ -12,9 +12,9 @@ public class МагическиДуми {
 		this.command = command;
 	}
 	
-	public void изричанеНаДумите() {
+	public void РёР·СЂРёС‡Р°РЅРµРќР°Р”СѓРјРёС‚Рµ() {
 		if(this.command == null) {
-			System.out.println("Изречете магическите думи");
+			System.out.println("РР·СЂРµС‡РµС‚Рµ РјР°РіРёС‡РµСЃРєРёС‚Рµ РґСѓРјРё");
 			return;
 		}
 		this.command.execute();
