@@ -2,5 +2,5 @@ package abstractfactory;
 
 public abstract class AbstractFactory 
 {
-	abstract ПроизведенаИграчка getToy(String toyType);
+	abstract РџСЂРѕРёР·РІРµРґРµРЅР°РРіСЂР°С‡РєР° getToy(String toyType);
 }
