@@ -3,5 +3,5 @@ package observer;
 public interface Observer
 {
 	void update();
-	void checkBoard(Observable магическаДъска);
+	void checkBoard(Observable РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°);
 }
