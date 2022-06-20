@@ -1,17 +1,17 @@
 package command;
 
-public class ТрябватМиКукли implements Command
+public class РўСЂСЏР±РІР°С‚РњРёРљСѓРєР»Рё implements Command
 {
-	private Играчка играчка;
+	private РРіСЂР°С‡РєР° РёРіСЂР°С‡РєР°;
 	
-	public ТрябватМиКукли(Играчка играчка) 
+	public РўСЂСЏР±РІР°С‚РњРёРљСѓРєР»Рё(РРіСЂР°С‡РєР° РёРіСЂР°С‡РєР°) 
 	{
-		this.играчка = играчка;
+		this.РёРіСЂР°С‡РєР° = РёРіСЂР°С‡РєР°;
 	}
 	
 	@Override
 	public void execute() 
 	{
-		this.играчка.кукла();
+		this.РёРіСЂР°С‡РєР°.РєСѓРєР»Р°();
 	}
 }
