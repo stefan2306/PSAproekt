@@ -1,12 +1,12 @@
 package observer;
 
-public class Джудже implements Observer
+public class Р”Р¶СѓРґР¶Рµ implements Observer
 {
 
 	private String name;
-	private Observable магическаДъска;
+	private Observable РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°;
 
-	public Джудже(String name)
+	public Р”Р¶СѓРґР¶Рµ(String name)
 	{
 		this.name = name;
 	}
@@ -14,19 +14,19 @@ public class Джудже implements Observer
 	@Override
 	public void update()
 	{
-		if(this.магическаДъска == null) 
+		if(this.РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР° == null) 
 		{
-			System.out.println("На Дядо Коледа не му трябват играчки");
+			System.out.println("РќР° Р”СЏРґРѕ РљРѕР»РµРґР° РЅРµ РјСѓ С‚СЂСЏР±РІР°С‚ РёРіСЂР°С‡РєРё");
 			return;
 		}
-		String последнаКоманда = this.магическаДъска.getUpdate();
-		System.out.println(this.name + "получи командата: " + последнаКоманда);
+		String РїРѕСЃР»РµРґРЅР°РљРѕРјР°РЅРґР° = this.РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°.getUpdate();
+		System.out.println(this.name + "РїРѕР»СѓС‡Рё РєРѕРјР°РЅРґР°С‚Р°: " + РїРѕСЃР»РµРґРЅР°РљРѕРјР°РЅРґР°);
 	}
 
 	@Override
-	public void checkBoard(Observable магическаДъска) 
+	public void checkBoard(Observable РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°) 
 	{
-		this.магическаДъска = магическаДъска;
+		this.РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР° = РјР°РіРёС‡РµСЃРєР°Р”СЉСЃРєР°;
 	}
 
 }
