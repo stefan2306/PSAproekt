@@ -1,9 +1,10 @@
 package abstractfactory;
 
-public interface Кукла implements ПроизведенаИграчка
+public interface РљСѓРєР»Р° implements РџСЂРѕРёР·РІРµРґРµРЅР°РРіСЂР°С‡РєР°
 {
 	void produce()
 	{
-		System.println("Произвеждане на нова кукла");
+		System.println("РџСЂРѕРёР·РІРµР¶РґР°РЅРµ РЅР° РЅРѕРІР° РєСѓРєР»Р°");
 	}
 }
+
